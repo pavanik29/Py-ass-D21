@@ -1,0 +1,11 @@
+n=int(input())
+A=[]
+for j in range(n):
+    l=list(map(int,input().split()))
+    A.append(l)
+for j in range(0,n):
+    maxx=A[j][0]
+    for i in range(0,n):
+        if A[i][j]>maxx:
+            maxx=A[i][j]
+    print(maxx,end=' ')
